@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        body
+        {
+            background-image: url("Dlithe.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: fixed;
+        }
+        p::first-letter
+        {
+            color: rgb(25, 22, 51);
+            font-size: large;
+        }  
+        p::first-line
+        { 
+            background-color: rgb(221, 136, 200);
+        }
+        ::marker
+        {
+            color:rgb(197, 183, 211);
+        }
+        ::selection
+        {
+            color:rgb(148, 136, 138);
+            background-color: rgb(141, 110, 71);
+        }
+        h3::before
+        {
+            content: url("html.jpg");
+        }
+        h3::after
+        {
+            content: url("nodejs.jpg");
+        }
+    </style>
+</head>
+<body>
+    <h3 style="background-color:bisque;text-align:center">Welcome to Pseudo Elements</h3>
+    <hr>
+    <p> 
+        Industry Experience
+        We are from the Industry. We have the best combination of HR & Engineering principles. We understand corporate & resource needs better. </p>
+    </hr>
+   
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        
+    </ul>
+    
+</body>
+</html>
